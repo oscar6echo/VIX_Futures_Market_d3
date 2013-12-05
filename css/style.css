@@ -1,0 +1,249 @@
+
+body {
+	font-family: Arial Narrow ;
+	text-align: center;
+	font-variant: normal;
+	font-size:12px;
+	letter-spacing: 0px;
+	text-decoration: none;
+}
+
+#title {
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+	text-anchor: middle;
+	padding-bottom: 5px;
+}
+
+#container {
+	text-align: center;
+	background-color: #FFF;
+}
+
+#main {
+	pointer-events:none;
+}
+
+#left_axis_min_slider_id, #left_axis_max_slider_id, #bottom_axis_max_slider_id, #right_axis_max_slider_id, #second_slider_id{
+	width: 140px;
+	height: 15px;
+}
+
+.axis path, .axis line {
+	fill: none;
+	stroke: black;
+	stroke-width: 1px;
+	shape-rendering: crispEdges;
+}
+
+.font1 {
+	font-family: Arial Narrow;
+	font-size: 13px;
+}
+
+.font2 {
+	font-family: Arial Narrow;
+	font-size: 12px;
+}
+
+.yRightLabel {
+	font-family: Arial Narrow;
+	font-size: 13px;
+}
+
+.grid line{
+	stroke-dasharray: 6, 3;
+	stroke: gray;
+	stroke-width: 1;
+	opacity: 0.6;
+}
+
+.currentdate {
+	font-family: Arial Narrow;
+	font-size: 14px;
+	fill: #E82A37;
+	text-anchor: end;
+}
+
+.currentdate_second {
+	font-family: Arial Narrow;
+	font-size: 14px;
+	fill: #F6A615;
+	text-anchor: end;
+}
+
+.line.close {
+	stroke: #E82A37;
+	stroke-width: 0.8;
+	fill: none;
+	opacity: 0.8;
+}
+
+.line.close_second{
+	stroke: #F6A615;
+	stroke-width: 0.8;
+	fill: none;
+	opacity: 0.75;
+}
+
+.spot {
+	fill: #F35E4C;
+	stroke: black;
+	opacity: 1.0;
+}
+
+.spot_second {
+	fill: #FFD7B3;
+	stroke: black;
+	opacity: 1.0;
+}
+
+.fut {
+	fill: #E82A37;
+	stroke: black;
+	opacity: 1.0;
+}
+
+.fut_second{
+	fill: #F6A615;
+	stroke: black;
+	opacity: 1.0;
+}
+
+.volumes {
+	fill: #7A8CB2;
+	fill: #9e9ac8;
+	stroke: black;
+	stroke-width: 1;
+	opacity: 0.15;
+}
+
+.line_Strat_context {
+	fill: none;
+	stroke: #1647E9;
+	stroke-width: 1;
+}
+
+.brush .extent {
+	stroke: #fff;
+	fill-opacity: .10;
+	shape-rendering: crispEdges;
+}
+
+.arrows {
+	fill: none;
+	stroke: #133AD9;
+	stroke-width: 2.5px;
+}
+
+#arrow_head {
+	fill: #133AD9;
+	/*fill: #6baed6;*/
+}
+
+.area_Strat {
+	fill: url(#area-gradient);
+	stroke-width: 0.25px;
+	stroke: blue;
+}
+
+.line_Strat_thin {
+	fill: none;
+	stroke: #1647E9;
+	stroke-width: 0.20px;
+}
+
+.line_Strat_thick {
+	fill: none;
+	stroke: #1647E9;
+	stroke-width: 0.5px;
+}
+
+#overlay {
+	fill: none;
+	pointer-events: all;
+}
+
+.pointer_circle1, .pointer_circle2 {
+	stroke: #1647E9;
+	fill: none;
+	opacity: 0.9;
+}
+
+.pointer_line1, .pointer_line2, .pointer_line_horiz {
+	stroke: #0DA921;
+	stroke-width: 1px;
+	opacity: 0.9;
+}
+
+table {
+	border-collapse: collapse;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#table_sliders td, #table_sliders th {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: center;
+	border: 0px black solid;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+#second_span_id {
+	width: 20px;
+}
+
+#table_fut {
+	border: 0px black solid;
+}
+
+#table_track {
+	border-top: 0px black solid;
+}
+
+#table_fut tr td, #table_track td, #table_track th {
+	font-family: Arial;
+	font-size: 10px;
+	font-weight: normal;
+	border: 1px gray solid;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+#table_fut td.first_col {
+	width: 135px;
+	font-weight: bold;
+}
+
+#table_fut td.next_col {
+	width: 50px;
+}
+
+#table_track td {
+	width: 60px;
+}
+
+#table_track tr :first-child{
+	font-weight: bold;
+}
+
+.col_1 {
+	background-color: white;
+}
+
+.col_2 {
+	background-color: #F0EDEB;
+}
+
+.invisible {
+	visibility: hidden;
+}
+

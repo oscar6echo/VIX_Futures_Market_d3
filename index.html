@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Strategy on VIX Futures Visualisation</title>
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="./js/anim.js"></script>
+</head>
+
+<body>
+
+	<div id="container">
+		<div id="title"></div>
+		<table id="table_fut"></table>
+	</div>
+
+	<input id="time_slider_id" type="range" style="width:350px" name="" min="0" max="1" step="1" value="0" onchange="anim.set_frame(+this.value);"></input>
+	<br>
+	<button onclick="anim.slower()">-</button>
+	<button onclick="anim.first_frame()"><img class="anim_icon" src="./player_icons/first.png"></button>
+	<button onclick="anim.previous_frame()"><img class="anim_icon" src="./player_icons/prev.png"></button>
+	<button onclick="anim.reverse_animation()"><img class="anim_icon" src="./player_icons/reverse.png"></button>
+	<button onclick="anim.pause_animation()"><img class="anim_icon" src="./player_icons/pause.png"></button>
+	<button onclick="anim.play_animation()"><img class="anim_icon" src="./player_icons/play.png"></button>
+	<button onclick="anim.next_frame()"><img class="anim_icon" src="./player_icons/next.png"></button>
+	<button onclick="anim.last_frame()"><img class="anim_icon" src="./player_icons/last.png"></button>
+	<button onclick="anim.faster()">+</button>
+	<form action="" name="loop_select_id" class="anim_control">
+		<input type="radio" name="state" value="" checked> Once </input>
+		<input type="radio" name="state" value=""> Loop </input>
+		<input type="radio" name="state" value=""> Reflect </input>
+	</form>
+	<br>
+
+	<table id="table_sliders">
+		<tr>
+			<td>Show Volumes</td>
+			<td>Left Axis Maximum</td>
+			<td>Left Axis Minimum</td>
+			<td>Bottom Axis Maximum</td>
+			<td>Right Axis Maximum</td>
+			<th colspan="2">Offset in trading days</th>
+		</tr>
+		<tr>
+			<td><input id="volume_id" type="checkbox" name="" value="" onclick="anim.set_show_volumes(this);" checked="checked"></button></td>
+			<td><input id="left_axis_max_slider_id" type="range" name="" min="0" max="85" step="1" value="30" onchange="anim.set_left_axis_max(+this.value);"/></td>
+			<td><input id="left_axis_min_slider_id" type="range" name="" min="0" max="85" step="1" value="0" onchange="anim.set_left_axis_min(+this.value);"/></td>
+			<td><input id="bottom_axis_max_slider_id" type="range" name="" min="40" max="320" step="1" value="270" onchange="anim.set_bottom_axis_max(+this.value);"/></td>
+			<td><input id="right_axis_max_slider_id" type="range" name="" min="0" max="150000" step="1000" value="5000" onchange="anim.set_right_axis_max(+this.value);"/></td>
+			<td><input id="second_slider_id" type="range" name="" min="-10" max="10" step="1" value="0" onchange="anim.set_second(+this.value);"/></td>
+			<td id="second_span_id">0</td>
+		</tr>
+	</table>
+	<br>
+
+</body>
+
+<script type="text/javascript" src="./js/viz.js"></script>
+
+</html>
