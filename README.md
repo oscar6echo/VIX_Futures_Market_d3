@@ -4,5 +4,5 @@ The dynamic representation of the VIX futures market structure in time enables t
 
 All data is publicly available on the [CBOE Futures Exchange website](http://cfe.cboe.com/Data/historicaldata.aspx).
 
-Based [d3.js](http://d3js.org/), and [JSAnimation](https://github.com/jakevdp/JSAnimation).
+Based on [d3.js](http://d3js.org/), and [JSAnimation](https://github.com/jakevdp/JSAnimation).
 
